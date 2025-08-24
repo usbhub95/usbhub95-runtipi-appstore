@@ -5,7 +5,8 @@
       "image": "phasecorex/red-discordbot",
       "environment": {
         "PREFIX": ".",
-        "TZ": "Australia/Sydney"
+        "TZ": "Australia/Sydney",
+        "PUID": "1000"
       },
       "volumes": [
         {
