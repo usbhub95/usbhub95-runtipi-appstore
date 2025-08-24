@@ -1,0 +1,21 @@
+{
+  "services": [
+    {
+      "name": "redbot",
+      "image": "phasecorex/red-discordbot",
+      "environment": {
+        "PREFIX": ".",
+        "TZ": "Australia/Sydney"
+      },
+      "volumes": [
+        {
+          "hostPath": "./redbot",
+          "containerPath": "/data",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        }
+      ]
+    }
+  ]
+}
