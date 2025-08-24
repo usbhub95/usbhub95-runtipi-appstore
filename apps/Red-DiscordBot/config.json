@@ -1,5 +1,5 @@
 {
-  "name": "Red-DiscordBot",
+  "name": "red-discordbot",
   "id": "redbot",
   "available": true,
   "short_desc": "Container for Red, a fully modular self-hosted bot.",
