@@ -4,6 +4,7 @@
       "name": "redbot",
       "image": "phasecorex/red-discordbot",
       "environment": {
+        "TOKEN": "your_bot_token_goes_here",
         "PREFIX": ".",
         "TZ": "Australia/Sydney"
       },
