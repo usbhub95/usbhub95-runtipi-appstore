@@ -1,0 +1,29 @@
+{
+  "services": [
+    {
+      "name": "redbot",
+      "image": "phasecorex/red-discordbot",
+      "environment": {
+        "TOKEN": "${TOKEN}",
+        "PREFIX": "${PREFIX}",
+        "TZ": "${TZ}"
+      },
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/redbot",
+          "containerPath": "/data",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        },
+        {
+          "hostPath": "${ROOT_FOLDER_HOST}/media/data/music",
+          "containerPath": "/data/cogs/Audio/localtracks",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        }
+      ]
+    }
+  ]
+}
