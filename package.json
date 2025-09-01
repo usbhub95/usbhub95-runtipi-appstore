@@ -1,6 +1,6 @@
 {
-  "name": "example-appstore",
-  "version": "1.0.0",
+  "name": "usbhub95-runtipi-appstore",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^22.14.1"
