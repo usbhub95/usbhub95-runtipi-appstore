@@ -1,0 +1,37 @@
+{
+  "name": "Red-DiscordBot",
+  "id": "redbot",
+  "available": true,
+  "short_desc": "Container for Red, a fully modular self-hosted bot.",
+  "author": "PhasecoreX",
+  "port": 5481,
+  "categories": ["automation", "utilities", "music", "gaming"],
+  "description": "This is a container for Red, a fully modular bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable. This is a self-hosted bot – meaning you will need to host and maintain your own instance. You can turn Red into an admin bot, music bot, trivia bot, new best friend or all of these together!",
+  "tipi_version": 2,
+  "version": "V3",
+  "source": "https://github.com/PhasecoreX/docker-red-discordbot",
+  "exposable": false,
+  "supported_architectures": ["arm64", "amd64"],
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "Discord bot token",
+      "required": true,
+      "env_variable": "TOKEN"
+    },
+    {
+      "type": "text",
+      "label": "Timezone",
+      "hint": "E.g. Australia/Sydney, America/Detroit.",
+      "required": true,
+      "env_variable": "TZ"
+    },
+    {
+      "type": "text",
+      "label": "Bot prefix",
+      "hint": "The prefix for bot commands.",
+      "required": true,
+      "env_variable": "PREFIX"
+    }
+  ]
+}
